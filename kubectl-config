@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: ~/.minikube/aws_ca.crt
+    server: https://10.10.1.193:8443
+  name: aws_minikube
+contexts:
+- context:
+    cluster: aws_minikube
+    user: aws_minikube
+  name: aws_minikube
+current-context: aws_minikube
+kind: Config
+preferences: {}
+users:
+- name: aws_minikube
+  user:
+    client-certificate: ~/.minikube/aws_client.crt
+    client-key: ~/.minikube/aws_client.key

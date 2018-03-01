@@ -1,0 +1,29 @@
+apiVersion: apps/v1beta2 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: analytics-gateway
+  labels:
+    app: analytics-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: analytics-gateway
+  template:
+    metadata:
+      labels:
+        app: analytics-gateway
+    spec:
+      containers:
+      - name: analytics-gateway
+        image: 777274146797.dkr.ecr.eu-west-1.amazonaws.com/brandcrumb-webtracker-gateway:staging
+        env:
+        - name: NODE_ENV
+          value: "staging"
+        ports:
+        - containerPort: 9876
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: awsecr-cred
+
+

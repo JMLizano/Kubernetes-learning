@@ -33,6 +33,12 @@ Just a repo to compile learning resources for Kubernetes
 
     https://kubernetes.io/docs/concepts/configuration/secret/
 
+7. Demo time!!
+
+    - Minikube
+    - Kubernetes dashboard
+    - Helm
+    
 # Kubernetes in AWS
 
 https://kubernetes.io/docs/getting-started-guides/aws/

@@ -1,0 +1,18 @@
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: analytics-gateway
+  labels:
+    app: analytics-gateway-service
+spec:
+  ports:
+  - port: 9876
+    nodePort: 30100
+    name: analytics-gateway-port
+    targetPort: 9876
+    protocol: TCP
+  selector:
+    app: analytics-gateway
+  type: NodePort
