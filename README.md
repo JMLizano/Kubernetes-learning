@@ -10,16 +10,31 @@ Just a repo to compile learning resources for Kubernetes
 2. Architecture
     
     https://kubernetes.io/docs/concepts/overview/components
-    https://courses.edx.org/courses
+
+    https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS158x+2T2017/course/
 
 3. Object model
 
-    Pods, Deployments, Statefull sets, Services, Ingress
-    https://courses.edx.org/courses
+    Pods, Deployments, Stateful sets, Services, Ingress
+
+    https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS158x+2T2017/course/
 
 4. Kubectl 
+
+    https://kubernetes.io/docs/reference/kubectl/overview/
+
 5. Volumes
+
+    https://kubernetes.io/docs/concepts/storage/volumes/
+
 6. Configmap and secrets   
+
+    https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/
+
+    https://kubernetes.io/docs/concepts/configuration/secret/
+
+# Kubernetes in AWS
+
 https://kubernetes.io/docs/getting-started-guides/aws/
 
 https://github.com/kubernetes-incubator/kube-aws
